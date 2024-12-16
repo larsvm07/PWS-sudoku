@@ -1,1 +1,1 @@
-# PWS-sudoku kaka
+# PWS-sudoku
