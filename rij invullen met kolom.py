@@ -38,10 +38,11 @@ matrix_y = [
     
 ]
 
-for row in range(len(matrix)):
-    for i in range(len(matrix[row])):
-        matrix_y.append([row[i] for row in matrix])
+for i in range(len(matrix)):
+    matrix_y.append([row[i] for row in matrix])
 print(matrix_y)
+
+
     
 
 def solve(l_row, t_row, l_column, t_column):
