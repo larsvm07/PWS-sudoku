@@ -33,7 +33,9 @@ t_matrix = (
     [0, 3, 0, 0, 0, 2, 0, 0, 0],
     [4, 9, 0, 0, 5, 0, 0, 0, 3]
 )
+blocks = [
 
+]
 matrix_y = [
     
 ]
@@ -42,8 +44,15 @@ for i in range(len(matrix)):
     matrix_y.append([row[i] for row in matrix])
 print(matrix_y)
 
+def blokken_bouwen(sudoku):
+    for row in range(len(sudoku)): # itereert over iedere rij in sudoku
+        if 0 <= row <= 2:
+            for index in range(len(sudoku[row][index])):
+                if 0 <= index <= 2:
+                    blocks.append(sudoku[row][index])
 
-    
+
+blokken_bouwen(matrix)  
 
 def solve(l_row, t_row, l_column, t_column):
     uniques = []
