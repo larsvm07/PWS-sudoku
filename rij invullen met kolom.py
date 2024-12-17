@@ -76,5 +76,3 @@ def solve2(l_row, t_row, l_column, t_column):
     return unavailable 
 
 print(solve(l_nums_x, t_nums_x, l_nums_y, t_nums_y))
-
-#poopiekaka
