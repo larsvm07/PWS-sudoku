@@ -40,8 +40,7 @@ matrix_y = [
 
 for row in range(len(matrix)):
     for i in range(len(matrix[row])):
-        column = matrix[row][i]
-        matrix_y.append(column)
+        matrix_y.append([row[i] for row in matrix])
 print(matrix_y)
     
 
