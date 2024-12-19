@@ -40,7 +40,7 @@ print(matrix_y)
 
 def blokken_bouwen(sudoku):
     # itereert over iedere rij in sudoku
-    for row[0:2]
+    for   [0:2]
         blocks.append(sudoku[row])
             
             
