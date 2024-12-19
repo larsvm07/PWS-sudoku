@@ -39,13 +39,11 @@ for i in range(len(matrix)):
 print(matrix_y)
 
 def blokken_bouwen(sudoku):
-    for row in range(len(sudoku)): # itereert over iedere rij in sudoku
-        if 0 <= row <= 2:
-            for index in range(len(sudoku[row][index])):
-                if 0 <= index <= 2:
-                    blocks.append(sudoku[row][index])
-
-
+    # itereert over iedere rij in sudoku
+    for row[0:2]
+        blocks.append(sudoku[row])
+            
+            
 blokken_bouwen(matrix)  
 
 def solve(l_row, t_row, l_column, t_column):
@@ -78,4 +76,3 @@ def solve2(l_row, t_row, l_column, t_column):
                 unavailable.append(t_column[item])
     return unavailable 
 
-print(solve(l_nums_x, t_nums_x, l_nums_y, t_nums_y))
