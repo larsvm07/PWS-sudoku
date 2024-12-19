@@ -47,7 +47,7 @@ matrix_y = [
 block1 = matrix[0][0:3] + matrix[1][0:3] + matrix[3][0:3]
 
 
-print(block)
+print(block1)
 #blokken_bouwen(matrix)  
 #print(blocks)
 
