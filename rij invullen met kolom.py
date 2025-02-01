@@ -34,22 +34,22 @@ matrix_y = [
     
 ]
 
-#for i in range(len(matrix)):
-#    matrix_y.append([row[i] for row in matrix])
-#print(matrix_y)
+for i in range(len(matrix)):
+    matrix_y.append([row[i] for row in matrix])
+print(matrix_y)
 
-""""def blokken_bouwen(sudoku):
+def blokken_bouwen(sudoku):
     # itereert over iedere rij in sudoku
     for row in sudoku:
         blocks.append(row[0:3])
     for row in sudoku:
-        blocks[row].append(3:6)"""
+        blocks[row].append(3:6)
 block1 = matrix[0][0:3] + matrix[1][0:3] + matrix[3][0:3]
 
 
 print(block1)
-#blokken_bouwen(matrix)  
-#print(blocks)
+blokken_bouwen(matrix)  
+print(blocks)
 
 
 
