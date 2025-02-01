@@ -1,6 +1,5 @@
 import random 
 
-
 #Python programma die 4x4 sudoku's oplost door random getallen in te voeren.
 
 #a 4x4 sudoku
@@ -13,4 +12,5 @@ sudoku = [
 ]
 
 def generate():
-    
+    while True:
+        
