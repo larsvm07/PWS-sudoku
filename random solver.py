@@ -1,17 +1,17 @@
 import random
 sudoku = [
-    [0, 3, 4, 0],
-    [4, 0, 0, 2],
-    [1, 0, 0, 3],
-    [0, 2, 1, 0]
+    [0, 0, 0, 0],
+    [0, 3, 2, 0],
+    [0, 4, 3, 0],
+    [0, 1, 0, 0]
 ]
-matrix_solved = [
-    [2, 3, 4, 1],
-    [4, 1, 3, 2],
-    [1, 4, 2, 3],
-    [3, 2, 1, 4]
-]
-matrix_copy = [row[:] for row in sudoku]
+
+
+
+
+
+
+
 
 
 def check(checkmatrix):
@@ -22,23 +22,23 @@ def check(checkmatrix):
             solved = False
             break
     if solved:
-        for col in range(4):
+        for col in range(4): # checks colums
             column = [checkmatrix[row][col] for row in range(4)]
             if sorted(column) != [1, 2, 3, 4]:
                 solved = False
                 break
     if solved:
         blocks = [
-            [matrix_solved[0][0], matrix_solved[0][1],
-                matrix_solved[1][0], matrix_solved[1][1]],
-            [matrix_solved[0][2], matrix_solved[0][3],
-                matrix_solved[1][2], matrix_solved[1][3]],
-            [matrix_solved[2][0], matrix_solved[2][1],
-                matrix_solved[3][0], matrix_solved[3][1]],
-            [matrix_solved[2][2], matrix_solved[2][3],
-                matrix_solved[3][2], matrix_solved[3][3]]
+            [checkmatrix[0][0], checkmatrix[0][1],
+                checkmatrix[1][0], checkmatrix[1][1]],
+            [checkmatrix[0][2], checkmatrix[0][3],
+                checkmatrix[1][2], checkmatrix[1][3]],
+            [checkmatrix[2][0], checkmatrix[2][1],
+                checkmatrix[3][0], checkmatrix[3][1]],
+            [checkmatrix[2][2], checkmatrix[2][3],
+                checkmatrix[3][2], checkmatrix[3][3]]
         ]
-        for i in range(4):
+        for i in range(4): # checks blocks (2x2)
             block = blocks[i]
             if sorted(block) != [1, 2, 3, 4]:
                 solved = False
